@@ -1,6 +1,7 @@
 module.exports = {
     experience_type: {
-        "internship": "(internship)"
+        "internship": "(internship)",
+        "developer": "(developer)"
     },
     skill_type: {
         "frontend": "Frontend Development",
