@@ -55,7 +55,6 @@
     "end": "2018.07",
     "name": "硬件开发工程师",
     "description": [
-      "使用 `LabVIEW` 编写摩擦副磨合测试试验台上位机软件和温度传感器动态响应实验台上位机软件",
       "高精度温控器开发，独立完成了 Modbus 和以太网功能",
       "协助同事进行智能鱼缸改进，增加了 Wi-Fi 功能，使用 `Lua` 脚本远程更新固件"
     ]
@@ -69,11 +68,9 @@
     "description": [
       "使用 `Flask` 实现后端，完成的功能有：注册、登录、修改信息、上传头像、发帖、评论和私信",
       "使用 `MySQL` 存储数据，`SQLAlchemy ORM` 框架操作数据库",
-      "使用 `Token` 防御 `CSRF` 攻击，对用户输入进行转义防御 `XSS` 攻击，还增加了用户权限验证",
-      "使用 `Jinja2` 渲染模版，并利用模版继承实现网页的页眉页脚",
-      "前端使用 `Bootstrap` / `markedjs` / `primejs` 美化样式，支持 `Markdown` 和语法高亮",
-      "使用 `Gunicorn` 开多进程，`Redis` 进行缓存，提高响应速度",
-      "使用 `Nginx` 反向代理完成负载均衡和静态文件托管",
+      "增加了用户权限验证，以及防御 `CSRF` / `XSS` 攻击",
+      "前端使用 `Bootstrap` 美化样式，支持 `Markdown` 和语法高亮",
+      "使用 `Gunicorn` 开多进程，`Redis` 进行缓存，提高响应速度，`Nginx` 反向代理提供负载均衡和静态文件托管",
       "使用 `bash` 脚本一键部署到云服务器"
     ],
     "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
@@ -85,7 +82,7 @@
     "name": "时光网 / 豆瓣爬虫",
     "source": "https://github.com/yim7/spider",
     "description": [
-      "基于 `Python` 实现的爬虫",
+      "使用 `Python` 实现的爬虫",
       "使用 `Requests` 发送请求，拿到服务器的数据",
       "使用 `PyQuery` 解析 HTML 文本，清洗数据"
     ],
@@ -99,23 +96,23 @@
       "description": [
         "熟练掌握 `Flask` / `Jinja2` 实现 Web 后端程序",
         "深入理解 `MVC` 模式，能够实现 `MVC` 模式的 Web 框架",
-        "深入理解 Web 原理，了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议，能够用 `Socket` 实现 Web 服务器",
-        "熟悉 `SQL 数据库`和 `NoSQL 数据库`，实现过基于 `MySQL` 的 `ORM` 框架，有使用 `MongoDB` 和 `Redis` 的经验"
+        "深入理解 Web 原理，能够用 `Socket` 实现 Web 服务器，了解 `HTTP`、 `TCP/IP`、 `WebSocket` 等协议",
+        "熟悉 `SQL 数据库`和 `NoSQL 数据库`，实现过基于 `MySQL` 的 `ORM` 框架，了解 `SQL注入`，有使用 `MongoDB` 和 `Redis` 的经验"
       ]
     }, {
       "summary": "`Web 安全`",
       "description": [
         "理解 `Cookie` / `Session` 的作用和实现",
         "理解 `CSRF` / `XSS `攻击的原理，能够实现攻击和防御",
-        "熟悉 `Hash 摘要`、`加盐`、`对称加密`、`非对称加密` ，知道 `HTTPS` 证书体系的原理和流程"
+        "理解 `Hash 摘要`、`加盐`、`对称加密`、`非对称加密` ，了解 `HTTPS` 证书体系的原理和流程"
       ]
     },
     {
       "summary": "Web 调试和部署",
       "description": [
-        "",
-        "有使用 `MongoDB` / `MySQL` 数据库，`Redis` 缓存，`nginx` 反向代理的经验",
-        "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议"
+        "能够使用 `Vagrant` / `VirtualBox` ，保证测试环境和服务器环境一致",
+        "熟练使用 `Nginx` / `Supervisor` / `Gunicorn` 部署高性能服务器",
+        "能够使用 `bash` 脚本实现一键部署"
       ]
     }]
   }, {
@@ -123,31 +120,30 @@
     "item": [{
       "summary": "`HTML` / `CSS`",
       "description": [
-        "能够编写语义化的 `HTML`，模块化的 `CSS`，实现各种布局和动画",
+        "能够编写语义化的 `HTML`，模块化的 `CSS`，实现常用布局和动画",
         "熟悉 `PureCSS` / `Bootstrap` 框架"
       ]
     }, {
       "summary": "`JavaScript`",
       "description": [
-        "熟悉 `JavaScript`，理解事件、事件委托和回调函数",
-        "了解 `ECMAScript` 新标准与相关后处理工具并能在项目中使用"
+        "熟悉 `JavaScript`，掌握事件和回调",
+        "能够用 `AJAX` 实现不用刷新和服务器进行交互"
       ]
     }, {
-      "summary": "`DOM` / `BOM` 及常见 `Web API`",
+      "summary": "其他",
       "description": [
-        "熟悉原生 `DOM` 与 `BOM` 的使用及相关标准（W3C / WHATWG），有桌面 / 移动端前端组件的开发经验",
-        "对 `WebGL` / `Web Workers` / `WebSocket` / `Web Components` / `SVG` 等 API 有一定的使用经验",
-        "阅读过 `WebKit` / `Blink` 源码中的部分实现，了解常见的 Web API **兼容性**问题及其解决方案"
+        "熟悉原生 `DOM` 与 `BOM` 及常见 `Web API`",
+        "熟练使用浏览器进行抓包和调试"
       ]
     }]
   }, {
     "type": "miscellaneous",
     "item": [
-      "一年 `Linux` 使用经验，熟悉常用命令与配置，能编写简单的 `bash` 脚本",
+      "熟练使用 `Linux`，能编写简单的 `bash` 脚本",
       "理解`算法的复杂度`，能够实现 `链表` 、`队列` 、`栈` 和 `哈希表` 等常用数据结构",
       "理解操作系统 `进程` 、`线程` 、`死锁` 、`线程安全` 、`内存泄露` 等概念，知道 `Python GIL` 的原理",
       "熟练使用 `Git` 进行版本管理",
-      "日常使用 `PyCharm` / `VSCode` 进行开发，新工具也能快速学会"
+      "日常使用 `PyCharm` / `VSCode` 进行开发"
     ]
   }]
 }
