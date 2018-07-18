@@ -6,20 +6,10 @@
   "repo": "https://github.com/joyeecheung/resume.git",
   "job_description": ["Python Web后端工程师"],
   "contact": {
+    "phone":15715161115,
     "email": "yimchiu7@gmail.com",
-    "wechat": {
-      "id": "joyee-cheung",
-      "qrcode": "static/wechat.svg"
-    },
-    "sinaweibo": {
-      "id": "SYSU_Joyee",
-      "url": "http://weibo.com/2930876843"
-    },
     "github": {
-      "id": "joyeecheung"
-    },
-    "blog": {
-      "url": "http://joyeecheung.cnblogs.com"
+      "id": "yim7"
     }
   },
   "links": [{
@@ -50,7 +40,7 @@
     "type": "english",
     "certificate": [{
       "type": "CET-4",
-      "score": "Pass"
+      "score": ""
     }],
     "description": [
       "能看懂英文文档",
@@ -62,39 +52,29 @@
     "techtype": "开发",
     "place": "灵凯智芯",
     "start": "2016.07",
-    "end": "至今",
-    "name": "硬件工程师",
+    "end": "2018.07",
+    "name": "硬件开发工程师",
     "description": [
       "使用 `LabVIEW` 编写摩擦副磨合测试试验台上位机软件和温度传感器动态响应实验台上位机软件",
-      "温控器功能开发，独立完成了 modbus 和以太网功能的开发",
-      "协助同事进行智能鱼缸改进，使用 nodemcu 模块增加了 wifi 功能，用户可以方便地通过手机获取鱼缸状态，用 lua 脚本更新也更简单了"
+      "高精度温控器开发，独立完成了 Modbus 和以太网功能",
+      "协助同事进行智能鱼缸改进，增加了 Wi-Fi 功能，使用 `Lua` 脚本远程更新固件"
     ]
   }, {
     "type": "project",
     "techtype": "backend",
     "project_type": "personal",
-    "name": "Resume",
-    "source": "https://github.com/joyeecheung/resume",
-    "demo": "http://joyeecheung.github.io/resume/",
+    "name": "我的论坛",
+    "source": "https://github.com/yim7/yim-club",
+    "demo": "http://118.25.101.182/",
     "description": [
-      "这份在线简历的生成器",
-      "从 JSON 读取数据，使用 `Jade` 模板生成 HTML，`Less` 生成**响应式**样式",
-      "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
-    ],
-    "stack": ["jade", "less", "gulp"],
-    "compatibility": "IE9+"
-  }, {
-    "type": "project",
-    "techtype": "frontend",
-    "project_type": "personal",
-    "name": "My Tech Diary",
-    "source": "https://github.com/joyeecheung/diary",
-    "demo": "http://joyeecheung.github.io/diary/",
-    "description": [
-      "一个技术日记站点生成器，从 `git submodule` 中读取 `Markdown` 文件，结合 `Jade` 模板，生成静态站点",
-      "通过 `PostCSS` 将依照实验性 CSS 标准编写的代码转译使用",
-      "前端 JavaScript 代码以 `CommonJS` 形式组织，使用 `WebPack` 进行打包处理",
-      "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
+      "使用 `Flask` 实现后端，完成的功能有：注册、登录、修改信息、上传头像、发帖、评论和私信",
+      "使用 `MySQL` 存储数据，`SQLAlchemy ORM` 框架操作数据库",
+      "使用 `Token` 防御 `CSRF` 攻击，对用户输入进行转义防御 `XSS` 攻击，还增加了用户权限验证",
+      "使用 `Jinja2` 渲染模版，并利用模版继承实现网页的页眉页脚",
+      "前端使用 `Bootstrap` / `markedjs` / `primejs` 美化样式，支持 `Markdown` 和语法高亮",
+      "使用 `Gunicorn` 开多进程，`Redis` 进行缓存，提高响应速度",
+      "使用 `Nginx` 反向代理完成负载均衡和静态文件托管",
+      "使用 `bash` 脚本一键部署到云服务器"
     ],
     "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
     "compatibility": "IE9+"
@@ -102,12 +82,12 @@
     "type": "project",
     "techtype": "frontend",
     "project_type": "personal",
-    "name": "Virtual Bookcase",
-    "source": "https://github.com/joyeecheung/virtual-bookcase",
+    "name": "时光网 / 豆瓣爬虫",
+    "source": "https://github.com/yim7/spider",
     "description": [
-      "基于 `Three.js` 实现的 3D 虚拟图书室",
-      "使用 `Express` 与 `MongoDB` 提供图书数据 API",
-      "使用 `RequireJS` 加载模块，`Grunt` 驱动工作流，`Web Worker` 优化图像处理"
+      "基于 `Python` 实现的爬虫",
+      "使用 `Requests` 发送请求，拿到服务器的数据",
+      "使用 `PyQuery` 解析 HTML 文本，清洗数据"
     ],
     "stack": ["three.js", "mongodb", "express"],
     "compatibility": "IE10+"
@@ -115,16 +95,25 @@
   "skills": [{
     "type": "backend",
     "item": [{
-      "summary": "`Flask`",
+      "summary": "`Python` / `Flask`",
       "description": [
-        "能够使用 `Node.js API` / `Express` / `Koa` 搭建简单的后端程序与数据库交互、渲染模板及提供 `RESTful API`",
-        "了解异步 I/O 及事件驱动的服务器模型，掌握常见的**异步编程**解决方案",
-        "能编写简单的 `Express` / `Connect` / `Koa` 中间件，使用 `Mocha` 与 `Chai` 编写单元测试"
+        "熟练掌握 `Flask` / `Jinja2` 实现 Web 后端程序",
+        "深入理解 `MVC` 模式，能够实现 `MVC` 模式的 Web 框架",
+        "深入理解 Web 原理，了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议，能够用 `Socket` 实现 Web 服务器",
+        "熟悉 `SQL 数据库`和 `NoSQL 数据库`，实现过基于 `MySQL` 的 `ORM` 框架，有使用 `MongoDB` 和 `Redis` 的经验"
       ]
     }, {
-      "summary": "其他",
+      "summary": "`Web 安全`",
       "description": [
-        "使用 `Tornado` / `Flask`（`Python`） 搭建过简单的服务器",
+        "理解 `Cookie` / `Session` 的作用和实现",
+        "理解 `CSRF` / `XSS `攻击的原理，能够实现攻击和防御",
+        "熟悉 `Hash 摘要`、`加盐`、`对称加密`、`非对称加密` ，知道 `HTTPS` 证书体系的原理和流程"
+      ]
+    },
+    {
+      "summary": "Web 调试和部署",
+      "description": [
+        "",
         "有使用 `MongoDB` / `MySQL` 数据库，`Redis` 缓存，`nginx` 反向代理的经验",
         "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议"
       ]
@@ -154,11 +143,11 @@
   }, {
     "type": "miscellaneous",
     "item": [
-      "一年多 `Linux` 使用经验，熟悉常用命令与配置，能编写简单的 `bash` 脚本",
-      "精通 `C语言`，能够在多种平台和编译环境下写C程序",
-      "能够使用 `Markdown` 编写文档，具备良好的技术交流能力",
+      "一年 `Linux` 使用经验，熟悉常用命令与配置，能编写简单的 `bash` 脚本",
+      "理解`算法的复杂度`，能够实现 `链表` 、`队列` 、`栈` 和 `哈希表` 等常用数据结构",
+      "理解操作系统 `进程` 、`线程` 、`死锁` 、`线程安全` 、`内存泄露` 等概念，知道 `Python GIL` 的原理",
       "熟练使用 `Git` 进行版本管理",
-      "日常使用 `PyCharm` / `VSCode` 进行开发，也乐于尝试新工具"
+      "日常使用 `PyCharm` / `VSCode` 进行开发，新工具也能快速学会"
     ]
   }]
 }

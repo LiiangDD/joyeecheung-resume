@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git://github.com/joyeecheung/resume.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "install": "^0.12.1",
+    "puppeteer": "^1.6.0"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-gh-pages": "^0.5.2",
